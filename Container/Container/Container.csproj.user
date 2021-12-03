@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Embed_Unity_Exe_Winforms_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Page1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SelectablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="WPF_UserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WPF_UserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
