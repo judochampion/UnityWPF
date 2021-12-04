@@ -16,16 +16,13 @@
         <Rectangle Fill="Red" Grid.Row="0"></Rectangle>
         <Rectangle Fill="Blue" Grid.Row="1"></Rectangle>
 
-
         <DockPanel Grid.Row="0" HorizontalAlignment="Center">
             <Button Content="Page1" Margin="10"  Width="100" HorizontalAlignment="Center" Click="LoadPage1_Click"></Button>
             <Button Content="Page2" Margin="10"  Width="100" HorizontalAlignment="Center" Click="LoadPage2_Click"></Button>
             <Button Content="Page3" Margin="10"  Width="100" HorizontalAlignment="Center" Click="LoadPage3_Click"></Button>
             <Button Content="Page4" Margin="10"  Width="100" HorizontalAlignment="Center" Click="LoadPage4_Click"></Button>
-
         </DockPanel>
 
-        <Frame x:Name="UnityFrame" Grid.Row="1"></Frame>
-        
+        <Frame x:Name="UnityFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>
