@@ -7,4 +7,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(SolutionDir)..\All Unity Files&quot; &quot;$(TargetDir)&quot; /s" />
+  </Target>
+
 </Project>
