@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Container
+﻿namespace Container
 {
     public class UnityWindowViewModel
     {
-
         private static UnityWindowViewModel _instance;
         public static UnityWindowViewModel Instance => _instance ?? (_instance = new UnityWindowViewModel());
 
@@ -15,10 +10,6 @@ namespace Container
         public UnityWindowViewModel()
         {
             myUserControl = new WPF_UserControl();
-
         }
-
-
-
     }
 }

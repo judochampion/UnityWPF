@@ -25,7 +25,8 @@ namespace Container
 
         private void LoadUnityUserControl(object sender, RoutedEventArgs e)
         {
-            UnityFrame.Content = UnityWindowViewModel.Instance.myUserControl;
+            Page4_UnityFrame.Content = UnityWindowViewModel.Instance.myUserControl;
+            Page4_UnityFrame.NavigationService.Refresh();
         }
     }
 }

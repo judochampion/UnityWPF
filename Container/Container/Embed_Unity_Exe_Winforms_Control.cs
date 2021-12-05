@@ -1,20 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using System.Diagnostics;
-using System.Windows.Forms.VisualStyles;
-//using LVD.CSSystemLib;
 
 namespace Container
 {
-    public partial class LVD_Steelplying_Embed_Unity_Exe_Winforms_Control : Form, IDisposable
+    public partial class Embed_Unity_Exe_Winforms_Control : Form, IDisposable
     {
         #region Fields
 
@@ -24,7 +17,6 @@ namespace Container
         private const int WM_ACTIVATE = 0x0006;
         private readonly IntPtr WA_ACTIVE = new IntPtr(1);
         private readonly IntPtr WA_INACTIVE = new IntPtr(0);
-
 
         private const int WM_CLOSE = 0x10;
 
@@ -52,7 +44,6 @@ namespace Container
         [DllImport("user32.dll")]
         private static extern int SetParent(IntPtr hWnd, IntPtr hWndNewParent);
 
-
         [DllImport("user32.dll")]
         private static extern int SetWindowLong(IntPtr hWnd, int nIndex, long dwNewLong);
 
@@ -62,12 +53,11 @@ namespace Container
         [DllImport("user32.dll")]
         private static extern int PostMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam);
 
-
         #endregion Properties
 
         #region Constructors
 
-        public LVD_Steelplying_Embed_Unity_Exe_Winforms_Control()
+        public Embed_Unity_Exe_Winforms_Control()
         {
             InitializeComponent();
 
@@ -104,15 +94,11 @@ namespace Container
             //Removed Win.32
             SendMessage(unityHWND, WM_ACTIVATE, WA_ACTIVE, IntPtr.Zero);
             SetForegroundWindow(unityHWND);
-
         }
 
         private void DeactivateUnityWindow()
         {
-
             SendMessage(unityHWND, WM_ACTIVATE, WA_INACTIVE, IntPtr.Zero);
-
-
         }
 
         private int WindowEnum(IntPtr hwnd, IntPtr lparam)
@@ -130,7 +116,6 @@ namespace Container
 
         protected override void OnClosing(CancelEventArgs e)
         {
-
             /*
             CSWin32.SetParent(unityHWND, IntPtr.Zero);
             CSWin32.SetWindowLong(unityHWND, CSWin32.GWL_STYLE, CSWin32.WS_VISIBLE);
@@ -142,7 +127,6 @@ namespace Container
             CSWin32.PostMessage(unityHWND, CSWin32.WM_CLOSE, 0, 0);
             */
 
-
             //Work in progress
             //SetParent(unityHWND, IntPtr.Zero);
             //SetForegroundWindow(unityHWND);
@@ -151,10 +135,8 @@ namespace Container
 
             //PostMessage(unityHWND, WM_CLOSE, WA_INACTIVE, IntPtr.Zero);
 
-
             base.OnClosing(e);
         }
-       
 
         #endregion Methods
 

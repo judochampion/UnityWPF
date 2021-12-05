@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;$(SolutionDir)..\All Unity Files&quot; &quot;$(TargetDir)&quot; /s" />
+    <Exec Command="xcopy &quot;$(SolutionDir)..\All_Unity_Files&quot; &quot;$(TargetDir)&quot; /s /y /r /d" />
   </Target>
 
 </Project>

@@ -20,10 +20,10 @@ namespace Container
     /// </summary>
     public partial class MainWindow : Window
     {
-        Page1 page1;
-        Page2 page2;
-        Page3 page3;
-        Page4 page4;
+        private Page1 page1;
+        private Page2 page2;
+        private Page3 page3;
+        private Page4 page4;
 
         public MainWindow()
         {
@@ -35,7 +35,6 @@ namespace Container
             page4 = new Page4();
 
             UnityFrame.Content = page1;
-
         }
 
         private void LoadPage1_Click(object sender, RoutedEventArgs e)
@@ -51,7 +50,6 @@ namespace Container
         private void LoadPage3_Click(object sender, RoutedEventArgs e)
         {
             UnityFrame.Content = page3;
-
         }
 
         private void LoadPage4_Click(object sender, RoutedEventArgs e)

@@ -1,6 +1,6 @@
 ﻿namespace Container
 {
-    partial class LVD_Steelplying_Embed_Unity_Exe_Winforms_Control
+    partial class Embed_Unity_Exe_Winforms_Control
     {
         /// <summary>
         /// Required designer variable.

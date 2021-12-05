@@ -21,7 +21,6 @@ namespace Container
         public Page1()
         {
             InitializeComponent();
-            //UnityFrame.Content = UnityWindowViewModel.Instance.myUserControl;
         }
     }
 }

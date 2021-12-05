@@ -26,13 +26,11 @@ namespace Container
             InitializeComponent();
 
             Init();
-
         }
 
         private void On_Load(object sender, RoutedEventArgs e)
         {
-            //Init();
-
+            Init();
         }
 
         private void Init()
@@ -44,11 +42,9 @@ namespace Container
                     new WindowsFormsHost();
 
                 // Embed the Winforms Control
-                host.Child = new LVD_Steelplying_Embed_Unity_Exe_Winforms_Control();
+                host.Child = new Embed_Unity_Exe_Winforms_Control();
 
                 Grid.SetRow(host, 1);
-
-          
 
                 // Add the interop host control to the Grid
                 // control's collection of child controls.
@@ -56,8 +52,5 @@ namespace Container
                 Already_Loaded = true;
             }
         }
-
-
-
     }
 }
